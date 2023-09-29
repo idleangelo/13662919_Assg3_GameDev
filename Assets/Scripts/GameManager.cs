@@ -1,5 +1,6 @@
 using System;
 using System.Runtime.CompilerServices;
+using System.Collections;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -10,6 +11,29 @@ public class GameManager : MonoBehaviour
     public int score{ get;private set; }
     public int lives { get; private set; }
 
+    public AudioSource introMusic;
+    public AudioSource normalMusic;
+    private bool introMusicPlaying = false;
+    private void Awake()
+    {
+        introMusicPlaying = false;
+
+        if (Application.isPlaying && !introMusic.isPlaying)
+        {
+            introMusic.Play();
+            introMusicPlaying = true;
+            StartCoroutine(PlayNormalMusicAfterIntro());
+        }
+    }
+    IEnumerator PlayNormalMusicAfterIntro()
+    {
+        while (introMusicPlaying && introMusic.isPlaying)
+        {
+            yield return null;
+        }
+        yield return new WaitForSeconds(0);
+        normalMusic.Play();
+    }
     private void Start()
     {
         NewGame();
