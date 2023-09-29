@@ -15,12 +15,15 @@ public class Movement : MonoBehaviour
     public Vector2 nextDirection { get; private set; }
     public Vector3 startingPosition { get; private set; }
 
-    
+    [SerializeField]
+    private AudioSource munchAudioSource;
+    private Vector2 previousPosition;
     private void Awake()
     {
         
         this.rigidbody = GetComponent<Rigidbody2D>();
         this.startingPosition = this.transform.position;
+        previousPosition = new Vector2(transform.position.x, transform.position.y);
     }
     private void Start()
     {
@@ -47,6 +50,17 @@ public class Movement : MonoBehaviour
         Vector2 position = this.rigidbody.position;
         Vector2 translation = this.direction * this.speed * this.speedMultiplier * Time.fixedDeltaTime;
         this.rigidbody.MovePosition(position+translation);
+
+        Vector2 currentPosition = new Vector2(transform.position.x, transform.position.y);
+
+        if (currentPosition != previousPosition)
+        {
+            if (munchAudioSource != null && !munchAudioSource.isPlaying)
+            {
+                munchAudioSource.Play();
+            }
+            previousPosition = currentPosition;
+        }
     }
     public void SetDirection(Vector2 direction, bool forced = false)
     {
