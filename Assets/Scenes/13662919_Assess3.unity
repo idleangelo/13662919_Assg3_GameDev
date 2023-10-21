@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 133371874}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -31.737436, y: 6.5280914, z: 0.18799612}
+  m_LocalPosition: {x: -1.7, y: -0.17, z: 0.12}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -232,7 +232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171877625}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -31.863144, y: 10.279966, z: 0.18799612}
+  m_LocalPosition: {x: -3.52, y: 1.63, z: 0.12}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -549,7 +549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359529905}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -32.06779, y: 8.233489, z: 0.18799612}
+  m_LocalPosition: {x: 0.12, y: 1.61, z: 0.12}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -641,9 +641,9 @@ Transform:
   - {fileID: 506669184}
   - {fileID: 171877626}
   - {fileID: 359529906}
+  - {fileID: 133371875}
   - {fileID: 750405816}
   - {fileID: 1845439686}
-  - {fileID: 133371875}
   - {fileID: 2086188768}
   - {fileID: 787344673}
   m_Father: {fileID: 0}
@@ -674,7 +674,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506669183}
   m_LocalRotation: {x: 0.023269486, y: -0, z: -0, w: 0.9997293}
-  m_LocalPosition: {x: -31.857437, y: 12.516875, z: 0.2988575}
+  m_LocalPosition: {x: -1.71, y: 1.66, z: 0.12}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7543,7 +7543,6 @@ GameObject:
   - component: {fileID: 1525267167}
   - component: {fileID: 1525267166}
   - component: {fileID: 1525267168}
-  - component: {fileID: 1525267169}
   - component: {fileID: 1525267170}
   m_Layer: 6
   m_Name: Pacman
@@ -7639,7 +7638,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525267162}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.344329, y: -8.221257, z: -4.812004}
+  m_LocalPosition: {x: -13.94, y: 13.8, z: -4.812004}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7710,25 +7709,6 @@ MonoBehaviour:
   - {fileID: 1215477308, guid: 62070795df20f59409317ef8ea82968c, type: 3}
   animationTime: 0.125
   loop: 1
---- !u!114 &1525267169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525267162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d64146c8c7cd2640838666829703f87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 8
-  speedMultiplier: 1
-  initialDirection: {x: 1, y: 0}
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  munchAudioSource: {fileID: 1735483053}
 --- !u!82 &1525267170
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8584,7 +8564,7 @@ Tilemap:
       - {fileID: 0}
       - {fileID: 21300000, guid: 564ccb9d7f1518c43a07ff6faf65e994, type: 3}
       - {fileID: 0}
-      m_AnimationSpeed: 1.8045311
+      m_AnimationSpeed: 1.9194136
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 12, y: -10, z: 0}
@@ -8594,7 +8574,7 @@ Tilemap:
       - {fileID: 0}
       - {fileID: 21300000, guid: 564ccb9d7f1518c43a07ff6faf65e994, type: 3}
       - {fileID: 0}
-      m_AnimationSpeed: 4.3362393
+      m_AnimationSpeed: 1.1573272
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -13, y: 10, z: 0}
@@ -8604,7 +8584,7 @@ Tilemap:
       - {fileID: 0}
       - {fileID: 21300000, guid: 564ccb9d7f1518c43a07ff6faf65e994, type: 3}
       - {fileID: 0}
-      m_AnimationSpeed: 3.7279816
+      m_AnimationSpeed: 1.9881568
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 12, y: 10, z: 0}
@@ -8614,7 +8594,7 @@ Tilemap:
       - {fileID: 0}
       - {fileID: 21300000, guid: 564ccb9d7f1518c43a07ff6faf65e994, type: 3}
       - {fileID: 0}
-      m_AnimationSpeed: 4.797108
+      m_AnimationSpeed: 2.5409567
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
@@ -17370,7 +17350,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845439685}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -28.520563, y: 8.097057, z: 0.18799612}
+  m_LocalPosition: {x: -20.19, y: 2.74, z: 0.18799612}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19978,7 +19958,7 @@ Tilemap:
       - {fileID: 0}
       - {fileID: 21300000, guid: 564ccb9d7f1518c43a07ff6faf65e994, type: 3}
       - {fileID: 0}
-      m_AnimationSpeed: 1.9703779
+      m_AnimationSpeed: 3.589253
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
@@ -20072,7 +20052,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2086188767}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27.724329, y: 4.168742, z: 0.18799612}
+  m_LocalPosition: {x: -24.35, y: 7.14, z: 0.18799612}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
